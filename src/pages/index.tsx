@@ -22,7 +22,7 @@ import { FETCH_ALL_PRODUCTS_QUERY } from '@/utils/gql/GQL_QUERIES';
 const Index: NextPage = ({
   products,
 }: InferGetStaticPropsType<typeof getStaticProps>) => (
-  <Layout title="Travelofy">
+  <Layout title="">
     <Hero />
     {products && <DisplayProducts products={products} />}
   </Layout>

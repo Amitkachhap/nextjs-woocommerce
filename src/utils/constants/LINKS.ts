@@ -7,7 +7,7 @@ interface ILinks {
 const LINKS: ILinks[] = [
   {
     id: 0,
-    title: 'Travelofy',
+    title: '',
     href: '/',
   },
   {
