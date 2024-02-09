@@ -30,12 +30,12 @@ interface IVariationNode {
   name: string;
 }
 
-interface IAllPaColors {
+interface IAllPaColor {
   __typename: string;
   nodes: IVariationNode[];
 }
 
-interface IAllPaSizes {
+interface IAllPaSize {
   __typename: string;
   nodes: IVariationNode[];
 }
@@ -72,8 +72,8 @@ export interface IProduct {
   regularPrice: string;
   price: string;
   stockQuantity: number;
-  allPaColors?: IAllPaColors;
-  allPaSizes?: IAllPaSizes;
+  allPaColor?: IAllPaColor;
+  allPaSize?: IAllPaSize;
   variations?: IVariations;
 }
 
