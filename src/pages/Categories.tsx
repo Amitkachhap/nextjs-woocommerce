@@ -10,15 +10,15 @@ import { FETCH_ALL_CATEGORIES_QUERY } from '@/utils/gql/GQL_QUERIES';
 /**
  * Category page displays all of the categories
  */
-const Kategorier: NextPage = ({
+const CATEGORIES: NextPage = ({
   categories,
 }: InferGetStaticPropsType<typeof getStaticProps>) => (
-  <Layout title="Kategorier">
+  <Layout title="CATEGORIES">
     {categories && <Categories categories={categories} />}
   </Layout>
 );
 
-export default Kategorier;
+export default CATEGORIES;
 
 export const getStaticProps: GetStaticProps = async () => {
   const result = await client.query({
