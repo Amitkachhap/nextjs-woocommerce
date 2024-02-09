@@ -18,15 +18,15 @@ import type { NextPage, GetStaticProps, InferGetStaticPropsType } from 'next';
  * @returns {JSX.Element} - Rendered component
  */
 
-const Produkter: NextPage = ({
+const Shop: NextPage = ({
   products,
 }: InferGetStaticPropsType<typeof getStaticProps>) => (
-  <Layout title="Produkter">
+  <Layout title="Shop">
     {products && <DisplayProducts products={products} />}
   </Layout>
 );
 
-export default Produkter;
+export default Shop;
 
 export const getStaticProps: GetStaticProps = async () => {
   const { data, loading, networkStatus } = await client.query({

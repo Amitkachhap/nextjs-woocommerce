@@ -140,7 +140,7 @@ const DisplayProducts = ({ products }: IDisplayProductsProps) => (
         )
       ) : (
         <div className="mx-auto text-xl font-bold text-center text-gray-800 no-underline uppercase">
-          Ingen produkter funnet
+          Ingen Shop funnet
         </div>
       )}
     </div>

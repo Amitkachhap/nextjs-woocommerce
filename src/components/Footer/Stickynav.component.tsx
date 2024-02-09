@@ -23,16 +23,16 @@ const Stickynav = () => (
       >
         <ul className="items-center justify-between pt-4 text-base text-gray-700 md:flex md:pt-0">
           <li>
-            <Link href="/produkter">
+            <Link href="/Shop">
               <span className="inline-block py-2 pr-4 text-xl font-bold no-underline hover:underline">
                 Produkter
               </span>
             </Link>
           </li>
           <li>
-            <Link href="/kategorier">
+            <Link href="/Categories">
               <span className="inline-block py-2 pr-4 text-xl font-bold no-underline hover:underline">
-                Kategorier
+              Categories
               </span>
             </Link>
           </li>

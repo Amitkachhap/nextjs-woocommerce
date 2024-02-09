@@ -12,13 +12,13 @@ const LINKS: ILinks[] = [
   },
   {
     id: 1,
-    title: 'Produkter',
-    href: '/produkter',
+    title: 'Shop',
+    href: '/Shop',
   },
   {
     id: 2,
-    title: 'Kategorier',
-    href: '/kategorier',
+    title: 'Categories',
+    href: '/Categories',
   },
 ];
 
