@@ -25,13 +25,13 @@ test.describe('Shop', () => {
       timeout: 5000,
     });
 
-    await page.getByRole('link', { name: 'Handlekurv' }).click();
+    await page.getByRole('link', { name: 'SHOPPING CART' }).click();
 
-    await page.locator('section').filter({ hasText: 'Handlekurv' }).waitFor();
+    await page.locator('section').filter({ hasText: 'SHOPPING CART' }).waitFor();
 
-    // Check that that Handlekurv is visible
+    // Check that that SHOPPING CART is visible
     await expect(
-      page.locator('section').filter({ hasText: 'Handlekurv' }),
+      page.locator('section').filter({ hasText: 'SHOPPING CART' }),
     ).toBeVisible();
 
     // Check that we can go to Kasse

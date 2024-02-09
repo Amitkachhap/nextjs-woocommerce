@@ -173,7 +173,7 @@ const CartContents = () => {
           ))
         ) : (
           <h1 className="text-2xl font-bold mx-auto">
-            Ingen Shop i handlekurven
+            Ingen Shop i SHOPPING CARTen
           </h1>
         )}
         {updateCartProcessing && (

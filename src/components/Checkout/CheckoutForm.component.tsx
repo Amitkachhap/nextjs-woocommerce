@@ -145,7 +145,7 @@ const CheckoutForm = () => {
         <>
           {!cart && !orderCompleted && (
             <h1 className="text-2xl m-12 mt-24 font-bold text-center">
-              Ingen  i handlekurven
+              Ingen  i SHOPPING CARTen
             </h1>
           )}
           {orderCompleted && (
