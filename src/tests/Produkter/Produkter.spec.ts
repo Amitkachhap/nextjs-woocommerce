@@ -5,7 +5,7 @@ test.describe('Shop', () => {
     await page.goto('http://localhost:3000');
   });
 
-  test('Test at vi kan kjøpe produktet', async ({ page }) => {
+  test('Test that we can buy the product', async ({ page }) => {
     await page.getByRole('link', { name: 'Test simple' }).first().click();
 
     // Expects the URL to contain test-simple
@@ -15,9 +15,9 @@ test.describe('Shop', () => {
 
     await expect(page).toHaveURL(/.*simple/);
 
-    await expect(page.getByRole('button', { name: 'KJØP' })).toBeVisible();
+    await expect(page.getByRole('button', { name: 'Buy Now' })).toBeVisible();
 
-    await page.getByRole('button', { name: 'KJØP' }).click();
+    await page.getByRole('button', { name: 'Buy Now' }).click();
 
     await page.locator('#header').getByText('1').waitFor();
 
@@ -34,16 +34,16 @@ test.describe('Shop', () => {
       page.locator('section').filter({ hasText: 'SHOPPING CART' }),
     ).toBeVisible();
 
-    // Check that we can go to Kasse
+    // Check that we can go to CHECKOUT
 
-    await page.getByRole('button', { name: 'GÅ TIL KASSE' }).click();
+    await page.getByRole('button', { name: 'GO TO CHECKOUT' }).click();
 
-    await page.waitForURL('http://localhost:3000/kasse', {
+    await page.waitForURL('http://localhost:3000/CHECKOUT', {
       waitUntil: 'networkidle',
     });
 
     await expect(
-      page.locator('section').filter({ hasText: 'Kasse' }),
+      page.locator('section').filter({ hasText: 'CHECKOUT' }),
     ).toBeVisible();
 
     // Check that we can type something in Billing fields

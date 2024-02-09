@@ -65,7 +65,7 @@ The current release has been tested and is confirmed working with the following 
 
 8.  Add a product to the cart
 
-9.  Proceed to checkout (Gå til kasse)
+9.  Proceed to checkout (GO TO CHECKOUT)
 
 10. Fill in your details and place the order
 

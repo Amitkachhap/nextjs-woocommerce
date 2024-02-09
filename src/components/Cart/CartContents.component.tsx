@@ -186,8 +186,8 @@ const CartContents = () => {
         )}
         {!isCheckoutPage && data?.cart?.contents?.nodes.length ? (
           <div className="mt-4 mx-auto">
-            <Link href="/kasse" passHref>
-              <Button>GÅ TIL KASSE</Button>
+            <Link href="/CHECKOUT" passHref>
+              <Button>GO TO CHECKOUT</Button>
             </Link>
           </div>
         ) : null}

@@ -5,10 +5,10 @@ import CheckoutForm from '@/components/Checkout/CheckoutForm.component';
 // Types
 import type { NextPage } from 'next';
 
-const Kasse: NextPage = () => (
-  <Layout title="Kasse">
+const CHECKOUT: NextPage = () => (
+  <Layout title="CHECKOUT">
     <CheckoutForm />
   </Layout>
 );
 
-export default Kasse;
+export default CHECKOUT;
